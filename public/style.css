@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+div.spinner-border {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+body {
+  overflow-wrap: break-word;
+}
+hr.m-0 {
+  color:#7e7d7d;
+}
+div#result-user {
+  padding: 1rem 1.25rem;
+  overflow-wrap: break-word;
+}
+div#response {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+h2#sot {
+  font-family: 'Berkshire Swash', cursive;
+}
+
+#username-field {
+  color: #AC49F5;
+}
+
+div.input-group {
+  max-width: 500px;
+}
+
+#result-field {
+  max-width: 600px;
+}
+
+#user-status {
+  min-width: 0;
+}
