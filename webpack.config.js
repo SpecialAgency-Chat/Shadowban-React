@@ -22,13 +22,13 @@ module.exports = {
   },
   mode: debug ? "development" : "production",
   output: {
-    path: path.join(__dirname, "/public/"),
+    path: path.join(__dirname, "/docs/"),
     filename: "client.min.js",
   },
   plugins: [],
   devServer: {
     static: {
-      directory: path.join(__dirname, '/public/')
+      directory: path.join(__dirname, '/docs/')
     }
   }
 };
