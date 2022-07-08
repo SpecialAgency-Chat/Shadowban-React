@@ -69,6 +69,9 @@ export default function Body() {
       curb = "username";
       dSetUsername("username");
     }
+    if (!mn.match(/^[a-zA-Z0-9_]+$/)) {
+      return;
+    }
     if (curb === "username" && username !== "username") {
       curb = "username";
       dSetUsername("username");
