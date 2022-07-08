@@ -69,7 +69,7 @@ export default function Body() {
       curb = "username";
       dSetUsername("username");
     }
-    if (!mn.match(/^[a-zA-Z0-9_]+$/)) {
+    if (!mn.match(/^[a-zA-Z0-9_]{1,15}$/)) {
       return;
     }
     if (curb === "username" && username !== "username") {
@@ -92,7 +92,7 @@ export default function Body() {
       <div className="d-flex justify-content-center pt-4 mx-2">
         <InputGroup className="mt-3">
           <InputGroup.Text id="addon-wrapping">@</InputGroup.Text>
-          <Form.Control id="user" type="text" placeholder="username" value={username} onChange={(e) => setUsername(e.target.value)} aria-label="Recipient's username" className="form-control-lg" />
+          <Form.Control id="user" type="text" placeholder="username" value={username === "username" ? "":username} onChange={(e) => setUsername(e.target.value)} aria-label="Recipient's username" className="form-control-lg" />
           <Button variant="success" id="check" disabled={checkButtonDisabled} onClick={(e) => check(e.target)}>Check</Button>
         </InputGroup>
       </div>
